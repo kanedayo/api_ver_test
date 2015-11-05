@@ -60,4 +60,5 @@ $ bundle exec guard
 
 ###参考URL:
 [FactoryGirl](http://qiita.com/yui-knk/items/bf5ec1bf382e965660b2)
+
 [factory_girl/GETTING_STARTED](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)
