@@ -2,8 +2,10 @@ APIのバージョニング
 ---
 ##参考URL
 [RailsでAPI作成とAPIのテストのまとめ](http://ruby-rails.hatenadiary.com/entry/20150108/1420675366)
+---
 
-``` rspecのインストール
+rspecのインストール
+```
 #Gemfile
 gourp :development, :test do
   gem 'rspec-rails'
@@ -20,7 +22,7 @@ $ rake db:test:prepare
 $ rake db:migrate RAILS_ENV=test
 ```
 
-基本構造
+RSpecの記述例
 ```
 RSpec.describe XXX, :type => :model do
   it "AA" do # example(AA)
@@ -35,7 +37,8 @@ RSpec.describe XXX, :type => :model do
 end
 ```
 
-``` Guard関連
+Guard関連
+```
 # Gemfile
 gem 'terminal-notifier-guard'
 gem 'guard-rspec'
@@ -44,6 +47,6 @@ $ bundle exec guard
 ```
 
 参考URL:
-FactoryGirl:
-http://qiita.com/yui-knk/items/bf5ec1bf382e965660b2
-https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
+[FactoryGirl](http://qiita.com/yui-knk/items/bf5ec1bf382e965660b2)
+
+[factory_girl/GETTING_STARTED](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)
