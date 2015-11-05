@@ -1,9 +1,5 @@
 #APIのバージョニング練習環境
 ---
-##参考URL
-[RailsでAPI作成とAPIのテストのまとめ](http://ruby-rails.hatenadiary.com/entry/20150108/1420675366)
----
-
 rspecのインストール
 ```
 #Gemfile
@@ -58,7 +54,10 @@ $ guard init rspec
 $ bundle exec guard
 ```
 
+---
 ###参考URL:
+[RailsでAPI作成とAPIのテストのまとめ](http://ruby-rails.hatenadiary.com/entry/20150108/1420675366)
+
 [FactoryGirlの使い方](http://qiita.com/yui-knk/items/bf5ec1bf382e965660b2)
 
 [FactoryGirl/GETTING_STARTED](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)
