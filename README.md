@@ -1,4 +1,4 @@
-#APIのバージョニング
+#APIのバージョニング練習環境
 ---
 ##参考URL
 [RailsでAPI作成とAPIのテストのまとめ](http://ruby-rails.hatenadiary.com/entry/20150108/1420675366)
@@ -36,7 +36,7 @@ end
 RSpec:テストの記述例
 ```
 # spec/models/datum_spec.rb
-RSpec.describe "XXX", :type => :model do
+RSpec.describe Datum, :type => :model do
   it "AA" do # example(AA)
     expect( xxx ).to be_valid
   end
