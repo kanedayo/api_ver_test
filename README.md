@@ -1,4 +1,4 @@
-APIのバージョニング
+#APIのバージョニング
 ---
 ##参考URL
 [RailsでAPI作成とAPIのテストのまとめ](http://ruby-rails.hatenadiary.com/entry/20150108/1420675366)
@@ -22,9 +22,21 @@ $ rake db:test:prepare
 $ rake db:migrate RAILS_ENV=test
 ```
 
-RSpecの記述例
+FactoryGirl:設定ファイル例
 ```
-RSpec.describe XXX, :type => :model do
+# spec/factories/data.rb
+FactoryGirl.define do
+  factory :datum do
+    title "AAA"
+    category_id 1
+  end
+end
+```
+
+RSpec:テストの記述例
+```
+# spec/models/datum_spec.rb
+RSpec.describe "XXX", :type => :model do
   it "AA" do # example(AA)
     expect( xxx ).to be_valid
   end
@@ -46,7 +58,6 @@ $ guard init rspec
 $ bundle exec guard
 ```
 
-参考URL:
+###参考URL:
 [FactoryGirl](http://qiita.com/yui-knk/items/bf5ec1bf382e965660b2)
-
 [factory_girl/GETTING_STARTED](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)
